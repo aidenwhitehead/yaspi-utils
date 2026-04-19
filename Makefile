@@ -1,15 +1,15 @@
 CC = gcc
-CFLAGS = -ansi -pedantic -Wall -Wextra
+CFLAGS = -ansi -pedantic -Wall -Wextra -Iinclude
 LIBS = include/*.c
+TARGETS = cat echo wc head tail
 
-all: cat echo wc head
-cat: cat.c
-	$(CC) $(CFLAGS) -o cat cat.c $(LIBS)
-echo: echo.c
-	$(CC) $(CFLAGS) -o echo echo.c 
-wc: wc.c
-	$(CC) $(CFLAGS) -o wc wc.c $(LIBS)
-head: head.c
-	$(CC) $(CFLAGS) -o head head.c $(LIBS)
+all: $(TARGETS)
+
+debug: CFLAGS += -g -O0 -fno-omit-frame-pointer
+debug: all
+
+$(TARGETS): %: %.c $(LIBS)
+	$(CC) $(CFLAGS) -o $@ $^
+
 clean:
-	rm -f echo cat wc head
+	rm -f $(TARGETS)
