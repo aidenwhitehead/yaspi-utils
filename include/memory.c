@@ -14,3 +14,16 @@ void *xmalloc (size_t size)
   
   return ptr;
 }
+
+void *xcalloc (size_t nelem, size_t elsize)
+{
+  void *ptr;
+
+  ptr = calloc(nelem, elsize);
+  if (ptr == NULL) {
+    fprintf(stderr, "Not enough memory!\n");
+    exit(EXIT_FAILURE);
+  }
+  
+  return ptr;
+}
