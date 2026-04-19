@@ -1,0 +1,33 @@
+                               YASPi-Utils
+                   Yet Another Set of POSIX-ish Utils
+		   ==================================
+                           by Aiden Whitehead
+
+The utilities contained in this repo are the result of my continued
+journey into learning the (ANSI) C programming language.  They are
+intended to have readable and consistent code over everything else
+(since that is what I want to practice doing).  This is easier said than
+done, however, so much of this may be non-standard practice (and I will
+likely constantly change things as I realise how foolish of a choice it
+was).
+
+While I call them POSIX-ish, even that is perhaps too generous.  In
+reality, the POSIX standards are really more "guides" than rules when I
+write these.  They support all POSIX-mandated arguments and they
+implement the functionality according to (my best understanding of) the
+POSIX description.  However, they do not implement anything to do with
+internationalisation/multi-byte encoding/etc., which are pretty
+important on an actual POSIX-compliant system, but too complex for me to
+consider messing around with.
+
+In consideration of those severe limitations, they can basically just be
+seen as an attempt to implement POSIX functionality if we were still
+living in the 80s.  In fact, some strange things with libraries (e.g.,
+explicitly including sys/types.h before unistd.h) were done purely to
+allow these to be compiled on MINIX 2.0.
+
+As always, if you are reading this, I eagerly welcome any critiques and
+feedback.  Thank you!
+
+--
+Aiden Whitehead
