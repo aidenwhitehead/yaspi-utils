@@ -1,6 +1,7 @@
 #define _POSIX_C_SOURCE 2
 #include <stdio.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 #include "include/booleans.h"
 

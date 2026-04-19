@@ -11,6 +11,7 @@
 #include "include/buffers.h"
 #include "include/booleans.h"
 #include "include/memory.h"
+#include "include/files.h"
 
 void head (char *file, int lines);
 
