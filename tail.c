@@ -54,7 +54,7 @@ void tail (char *file, int num_lines, int from)
   int i, amount, newlines, line_len, idx;
   FILE *fp;
 
-  lines = xcalloc(abs(num_lines), sizeof(char *));
+  lines = xcalloc(num_lines, sizeof(char *));
   buffer = xmalloc(BUF_SIZE * sizeof(char));
   
   fp = open_file(file);
