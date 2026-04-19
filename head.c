@@ -8,10 +8,10 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "include/buffers.h"
-#include "include/booleans.h"
-#include "include/memory.h"
-#include "include/files.h"
+#include "buffers.h"
+#include "booleans.h"
+#include "memory.h"
+#include "files.h"
 
 void head (char *file, int lines);
 

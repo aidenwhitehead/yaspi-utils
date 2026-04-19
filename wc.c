@@ -9,10 +9,10 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#include "include/buffers.h"
-#include "include/booleans.h"
-#include "include/memory.h"
-#include "include/files.h"
+#include "buffers.h"
+#include "booleans.h"
+#include "memory.h"
+#include "files.h"
 
 
 /* Because this only supports ASCII, bytes = chars. */

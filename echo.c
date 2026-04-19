@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#include "include/booleans.h"
+#include "booleans.h"
 
 int main (int argc, char *argv[])
 {
