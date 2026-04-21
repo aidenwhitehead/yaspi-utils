@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -ansi -pedantic -Wall -Wextra -Iinclude
 LIBS = include/*.c
-TARGETS = cat echo wc head tail pwd true false
+TARGETS = cat echo wc head tail pwd true false basename
 
 all: $(TARGETS)
 
